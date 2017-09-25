@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Book.cs" />
+     <Compile Include="Assets\BookTable.cs" />
      <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
      <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
      <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\TypeUtils.cs" />
@@ -349,6 +351,8 @@
      <Compile Include="Assets\HoloToolkit-Tests\Utilities\Scripts\PlaneTargetGroupPicker.cs" />
      <Compile Include="Assets\HoloToolkit-Tests\Utilities\Scripts\TextToSpeechManagerTest.cs" />
      <Compile Include="Assets\HoloToolkit-Tests\Utilities\Scripts\TextToSpeechOnTap.cs" />
+     <Compile Include="Assets\newBook.cs" />
+     <Compile Include="Assets\WebRequest.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\Obsolete\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
      <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\SpatialMappingTap.shader" />
@@ -403,6 +407,9 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>C:/Users/Stephen McLeod/HoloBooks/Assets/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
