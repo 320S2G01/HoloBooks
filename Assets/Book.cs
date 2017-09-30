@@ -5,7 +5,7 @@ using Pathfinding.Serialization.JsonFx;
 
 public class Book : MonoBehaviour {
     //link to BookTable in Azure easytables
-    public string _WebsiteURL = "http://holobooks.azurewebsites.net/tables/books?zumo-api-version=2.0.0";
+    public string _WebsiteURL = "http://infosys320.azurewebsites.net/tables/books?zumo-api-version=2.0.0";
     public UnityEngine.GameObject[] books;
     public GameObject myPrefab;
     // Use this for initialization
@@ -24,6 +24,22 @@ public class Book : MonoBehaviour {
         newBook.transform.Find("Author").GetComponent<TextMesh>().text = Details[0].Author;
     }
 	
+
+    void PostBook(string Title, string Author, string Genre, string Publisher)
+    {
+
+        var title = Title;
+        var author = Author;
+        var genre = Genre;
+        var publisher = Publisher;
+
+        string[] jsonPost = new string[] { title, author, genre, publisher};
+        var jsonOut = JsonWriter.Serialize(jsonPost);
+        Debug.Log(jsonOut);
+        
+       
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
